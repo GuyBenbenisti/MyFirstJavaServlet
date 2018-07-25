@@ -137,50 +137,7 @@ public class LibraryManager extends HttpServlet {
         bookTableHtml.append("</table>");
         return bookTableHtml.toString();
     }
-//    private HttpServletResponse generateResponse(LibraryBook i_Book, HttpServletResponse i_Resp, boolean i_Succes, eAction i_Action) throws IOException {
-//        PrintWriter out = i_Resp.getWriter();
-//        switch(i_Action){
-//            case ADD:
-//                if(i_Succes)
-//                {
-//                    out.append("<h4>\"" + i_Book.getBookTitle()+ "\" was added to the library.</h4></br>");
-//                }
-//                else
-//                {
-//                    out.append("<h4>Failed to add \"" + i_Book.getBookTitle()+ "\" to the library.</h4></br>");
-//                }
-//                break;
-//            case TAKE:
-//                if(i_Succes)
-//                {
-//                    out.append("<h4>\"" + i_Book.getBookTitle()+ "\" was taken from the library.</h4></br>");
-//                    if(i_Book.getReturnDate() != null)
-//                    {
-//                        out.append("<h5>Please return it to the library by " + i_Book.getReturnDate().toString() + "</h5></br>");
-//                    }
-//                }
-//                else
-//                {
-//                    out.println("<h4>Failed to take \"" + i_Book.getBookTitle()+ "\" from the library.</h4></br>");
-//                }
-//                break;
-//            case RETURN:
-//                if(i_Succes)
-//                {
-//                    out.append("<h4>Thanks, \"" + i_Book.getBookTitle()+ "\" was returned to the library, Come again soon.</h4></br>");
-//                }
-//                else
-//                {
-//                    out.append("<h4>Failed to return \"" + i_Book.getBookTitle()+ "\" to the library.</h4></br>");
-//                }
-//                out.flush();
-//                break;
-//            case SHOW:
-//                break;
-//        }
-//        return i_Resp;
-//    }
-
+        
     private boolean addBookToLibrary(LibraryBook i_LibraryBook)
     {
         boolean addBookSuccessed = false;

@@ -1,7 +1,6 @@
 document.getElementById("add").addEventListener('click', addBook);
 document.getElementById("take").addEventListener('click', takeBook);
 document.getElementById("return").addEventListener('click', returnBook);
-document.getElementById("show").addEventListener('click', showBooks);
 url = "http://localhost:8080";
 
 function addBook()
@@ -95,10 +94,5 @@ function returnBook()
             document.body.appendChild(h);
         }
     })
-
-}
-
-function showBooks()
-{
 
 }
